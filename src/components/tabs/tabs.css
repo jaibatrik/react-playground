@@ -1,0 +1,42 @@
+.TabContainer__TabHeaders {
+  display: flex;
+}
+
+.TabContainer__TabHeader {
+  display: inline-flex;
+  width: auto;
+  background: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--cc-border-color);
+  color: var(--cc-a-color);
+  font-weight: normal;
+  border-radius: 0;
+  border-collapse: collapse;
+}
+
+.TabContainer__TabHeader:not(:disabled):hover,
+.TabContainer__TabHeader:not(:disabled):focus,
+.TabContainer__TabHeader:disabled {
+  background: none;
+}
+
+.TabContainer__TabHeader:last-child {
+  flex: 1 1 auto;
+  border-top: none;
+  border-right: none;
+  cursor: auto;
+}
+
+.TabContainer__TabHeader.selected {
+  color: inherit;
+  border-bottom: none;
+}
+
+.TabContainer__TabContent {
+  padding: 1rem;
+  display: none;
+}
+
+.TabContainer__TabContent.selected {
+  display: block;
+}
